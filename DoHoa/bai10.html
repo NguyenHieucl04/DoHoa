@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script src="bai10.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <h2>Mẫu điền thông tin</h2>
+        <label>Họ tên:</label>
+        <input type="text" id="name"><br><br>
+        <label>Địa chỉ:</label>
+        <input type="text" id="address"><br><br>
+        <label>Số điện thoại:</label>
+        <input type="text" id="phone"><br><br>
+        <button onclick="showInfo()">Hiển thị</button>
+    </div>
+    <div class="box hidden" id="infoBox">
+        <h2>Thông tin cá nhân</h2>
+        <p>Họ tên: <span id="displayName"></span></p>
+        <p>Địa chỉ: <span id="displayAddress"></span></p>
+        <p>Số điện thoại: <span id="displayPhone"></span></p>
+    </div>
+</div>
+</body>
+</html>
